@@ -3,7 +3,7 @@ package com.test.train.model;
 import java.time.LocalDate;
 import java.util.UUID;
 
-public class AbstractBaseObject {
+public abstract class AbstractBaseObject {
 
     protected UUID uniqueSerialNumber;
 
