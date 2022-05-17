@@ -3,67 +3,18 @@ package com.test.train.model;
 import java.time.LocalDate;
 import java.util.UUID;
 
-public class Wagon {
-
-    private UUID uniqueSerialNumber;
-
-    private String manufacturer;
-
-    private LocalDate yearOfProduction;
+public class Wagon extends AbstractBaseObject {
 
     private int numberOfPassengers;
 
-    private double emptyWeight;
-
-    private double length;
-
-    private double maxLoadingWeightForGoods;
-
     private WagonType type;
-
-    private boolean isAssignedToTrain;
-
-    public Wagon() {
-    }
-
-    public UUID getUniqueSerialNumber() {
-        return uniqueSerialNumber;
-    }
-
-    public String getManufacturer() {
-        return manufacturer;
-    }
-
-    public LocalDate getYearOfProduction() {
-        return yearOfProduction;
-    }
 
     public int getNumberOfPassengers() {
         return numberOfPassengers;
     }
 
-    public double getEmptyWeight() {
-        return emptyWeight;
-    }
-
-    public double getLength() {
-        return length;
-    }
-
-    public double getMaxLoadingWeightForGoods() {
-        return maxLoadingWeightForGoods;
-    }
-
     public WagonType getType() {
         return type;
-    }
-
-    public boolean isAssignedToTrain() {
-        return isAssignedToTrain;
-    }
-
-    public void setAssignedToTrain(boolean assignedToTrain) {
-        isAssignedToTrain = assignedToTrain;
     }
 
     public static WagonBuilder newBuilder() {
